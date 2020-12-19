@@ -7,7 +7,12 @@ module Lita
       )
 
       route(
-        /i want a/i,
+        /^i want a/i,
+        :negotiate
+      )
+
+      route(
+        /^do you have/i,
         :negotiate
       )
 
